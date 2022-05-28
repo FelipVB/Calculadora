@@ -1,0 +1,33 @@
+.Resultado {
+    width: 245px;
+    height: 60px;
+    font-size: 30px;
+    text-align: right;
+    background-color: aliceblue;
+}
+
+#container {
+    margin: auto;
+    width: 253px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 60px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bigbtn {
+    width: 124px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
