@@ -7,44 +7,25 @@
     </head>   
 
     <body>
-		<div id="container">
-            <div>
-                <input 
-                type="text" 
-                disabled="disabled" 
-                class="Resultado" 
-                placeholder="0"
-                id="coiso"
-                >
-            </div>
-            <div class="row">
-                <button onclick="calculate('value' , 7)" class="btn">7</button>
-                <button onclick="calculate('value' , 8)" class="btn">8</button>
-                <button class="btn" onclick="calculate('value' , 9)">9</button>
-                <button onclick="calculate('action' , 'delete')" class="btn" style="background-color: #14130c; color: aliceblue;">DEL</button>
-            </div>
-            <div class="row">
-                <button class="btn" onclick="calculate('value' , 4)">4</button>
-                <button class="btn" onclick="calculate('value' , 5)">5</button>
-                <button class="btn" onclick="calculate('value' , 6)">6</button>
-                <button class="btn" onclick="calculate('action' , '+')">+</button>
-            </div>
-            <div class="row">
-                <button class="btn" onclick="calculate('value' , 1)">1</button>
-                <button class="btn" onclick="calculate('value' , 2)">2</button>
-                <button class="btn" onclick="calculate('value' , 3)">3</button>
-                <button class="btn" onclick="calculate('action' , '-')">-</button>
-            </div>
-            <div class="row">
-                <button class="btn" onclick="calculate('action' , '.')">.</button>
-                <button class="btn" onclick="calculate('value' , 0)">0</button>
-                <button class="btn" onclick="calculate('action' , '/')">/</button>
-                <button class="btn" onclick="calculate('action' , '*')">x</button>
-            </div>
-            <div class="row">
-                <button onclick="calculate('action' , 'c')" class="bigbtn" style="background-color: #32a850;">RESET</button>
-                <button onclick="calculate('action' , '=')" class="bigbtn" style="background-color: #f45c08;">ENTER</button>
-            </div>
+        <div id="container">
+                <div style="grid-column-start: 1; grid-column-end: 5;"><input type="text" disabled="disabled" class="Resultado" placeholder="0"id="coiso"></div>
+                <div style="grid-column-start: 1; grid-column-end: 3;"><button class="bigbtn" onclick="calculate('action' , 'c')">C</button></div>
+                <div><button onclick="calculate('action' , '*')">X</button></div>
+                <div><button onclick="calculate('action' , 'delete')">DEL</button></div>
+                <div><button onclick="calculate('value' , 7)">7</button></div>
+                <div><button onclick="calculate('value' , 8)">8</button></div>
+                <div><button onclick="calculate('value' , 9)">9</button></div>
+                <div><button onclick="calculate('action' , '+')">+</button></div>
+                <div><button onclick="calculate('value' , 4)">4</button></div>
+                <div><button onclick="calculate('value' , 5)">5</button></div>
+                <div><button onclick="calculate('value' , 6)">6</button></div>
+                <div><button onclick="calculate('action' , '-')">-</button></div>
+                <div><button onclick="calculate('value' , 1)">1</button></div>
+                <div><button onclick="calculate('value' , 2)">2</button></div>
+                <div><button onclick="calculate('value' , '3')">3</button></div>
+                <div style="grid-column-start: 4; grid-column-end: 5; grid-row-start: 5; grid-row-end: 7;"><button class="tallbtn" onclick="calculate('action' , '=')">=</button></div>
+                <div style="grid-column-start: 1; grid-column-end: 3;"><button class="bigbtn" onclick="calculate('value' , '0')">0</button></div>
+                <div><button onclick="calculate('action' , '.')">.</button></div>
         </div>
 
         <script src="Code.js"></script>
